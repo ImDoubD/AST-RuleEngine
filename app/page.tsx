@@ -319,7 +319,7 @@ export default function Home() {
           </tbody>
         </Table>
       </div>
-      <Snackbar autoHideDuration={2750} open={open} onClose={() => setOpen(false)}>
+      <Snackbar autoHideDuration={2750} color={message=="TRUE" ? "success":"danger"} open={open} size="lg" variant="solid" onClose={() => setOpen(false)}>
         {message}
       </Snackbar>
     </div>
